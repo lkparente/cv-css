@@ -1,0 +1,167 @@
+body {
+  margin: 0;
+  text-align: center;
+  /*centraliza todos elementos*/
+  font-family: 'Red Hat Text', sans-serif;
+  /*nome da fonte, estilo da fonte. como não é todo mundo que tem essa fonte, eu preciso usar um fallback (google cssfontstack). se eu quiser que todos vejam exatamente a minha fonte, eu vou ter que embedar minha fonte no código html e colocar o estilo aqui no css*/
+}
+
+h1 {
+  margin: 50px auto 0 auto;
+  /*auto alinha ao centro. ele é útil quando temos um block com width. colocamos direita e esquerda auto, ele vai centralizar horizontalmente*/
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 5.625rem;
+  /*100% são 16px, 1em são 16px e 1rem são 16px. como queremos deixar dinamico, é sempre bom deixar em porcentagem ou em. no entanto, se eu mudar a font do parent, ele pode ficar gigante, pq ele cresce em cima do que foi estipulado para o parente. sendo assim, temos que usar rem, que pega do root ao invés do parent*/
+  font-weight: 700;
+  color: #ececec
+}
+
+h2 {
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 500;
+  font-size: 2.5rem;
+  color: #ececec;
+  padding-bottom: 10px;
+}
+
+h3 {
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: normal;
+  font-size: 2.5rem;
+  color: #43b581;
+}
+
+h4 {
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  color: #ececec;
+  margin: 10px;
+}
+
+hr {
+  border-style: dotted none none;
+  border-color: #ececec;
+  border-width: 6px;
+  width: 4%;
+  margin: 100px auto;
+}
+
+p {
+  line-height: 2;
+  color: #b9bbbe;
+  font-size: 15px;
+  margin: 10px;
+}
+
+a {
+  color: #43b581;
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 300;
+  margin: 10px 20px;
+  text-decoration: none;
+}
+
+a:hover {
+  /*pseudo class; ação quando passar por cima do link*/
+  color: #b9bbbe;
+}
+
+.top-container {
+  background-color: #21252b;
+  position: relative;
+  padding: 150px;
+}
+
+.middle-container {
+  background-color: #282C34;
+  padding: 100px;
+}
+
+.bottom-container {
+  background-color: #21252b;
+  padding: 50px 0 20px;
+  /*o padding aqui cobre o padding do copyrights, então sai o branco do final da página*/
+}
+
+.pro {
+  text-decoration: underline;
+}
+
+.rock-img {
+  position: absolute;
+  width: 12%;
+  right: 210px;
+  top: 75px;
+}
+
+.snow-img {
+  position: absolute;
+  width: 12%;
+  left: 250px;
+  bottom: 75px;
+}
+
+.picture {
+  width: 20%;
+}
+
+.intro {
+  width: 35%;
+  margin: auto;
+}
+
+.skill-row {
+  width: 52%;
+  margin: 100px auto;
+  text-align: left;
+}
+
+.create-img {
+  width: 25%;
+  float: left;
+  /*joga a imagem para a esquerda, envolta do texto*/
+  /*o clear overrule o float. é um antiwrap. então se eu quero que uma parte do texto nao wrap, usar clear e o lado*/
+  margin-right: 30px;
+}
+
+.code-img {
+  width: 25%;
+  float: right;
+  margin-left: 30px;
+}
+
+.drums-img {
+  width: 25%;
+  float: left;
+  margin-right: 30px;
+}
+
+.contact-para {
+  width: 40%;
+  margin: 40px auto 40px;
+}
+
+.btn {
+  -webkit-border-radius: 28;
+  -moz-border-radius: 8;
+  border-radius: 28px;
+  font-family: 'Red Hat Text', sans-serif;
+  color: #ececec;
+  font-size: 18px;
+  background: #43b581;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #ececec;
+  color: #43b581;
+  text-decoration: none;
+}
+
+.copyright {
+  color: #b9bbbe;
+  font-size: 0.75rem;
+  padding: 20px 0;
+}
